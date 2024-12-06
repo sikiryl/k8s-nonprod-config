@@ -3,8 +3,8 @@ kind: Kustomization
 
 configMapGenerator:
 - name: cart
-  envs:
-  - cart.env
+  files:
+  - index.html=cart.html
 
 generatorOptions:
   disableNameSuffixHash: true
